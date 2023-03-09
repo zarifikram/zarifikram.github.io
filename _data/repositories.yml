@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - zarifikram
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - zarifikram/Flappy-Bird-automation-using-NEAT-PYTHON
+  - AugmentedDesignLab/junction-art
+  - zarifikram/NazrulDex-2
+  - zarifikram/Player-Management-System
+  - adhocmaster/gym-pedgrid
