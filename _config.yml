@@ -41,7 +41,7 @@ repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-s
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -96,11 +96,11 @@ pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: itiszarif
 facebook_id: itiszikram
-youtube_id: c/ZarifIkram
+youtube_id: ZarifIkram
 discord_id: 429514184997339147
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  I prefer mail for work contacts, but do not hesitate to contact me on any platforms. I am available everywhere.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
