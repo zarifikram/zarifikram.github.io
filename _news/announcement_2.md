@@ -1,11 +1,11 @@
 ---
 layout: post
-title: I have been promoted to fifth year in classical music training.
+title: A long announcement
 date: 2023-03-10 16:11:00-0400
 inline: false
 ---
 
-It was difficult, amidst all the things I had this year. I was not sure whether I will be able to pull it off, but I did it!
+It was difficult, amidst all the things I had this year. I was not sure whether I would be able to pull it off, but I did it!
 
 ***
 
