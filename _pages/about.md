@@ -20,6 +20,9 @@ social: true  # includes social icons at the bottom of the page
 
 Undergraduate junior @[CSE, BUET](https://cse.buet.ac.bd). People know me better as `ZIkram`. My close ones call me `Ziki`. I am a seeker of novelty. I bring life to everything and everyone around me. Time management is my specitiality, and therefore I do numorous things -- both academic and extra-curricular -- and still get enough time to check out the latest Pokemon and Zelda games. I am a fun person to talk about anything, from [Procedural Content Generation](https://en.wikipedia.org/wiki/Procedural_generation) to [The famous Vaporeon Copypasta](https://knowyourmeme.com/memes/vaporeon).  
 
+Currently, I am doing research in collaboration with [Augmented Design Lab](https://github.com/AugmentedDesignLab), and I have two papers -- one first-author -- in review (can't wait to edit that bit). 
+
+I also am a trained indian classical musician. Besides, I play harmonium, guitar, and piano.
 
 <!-- Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
