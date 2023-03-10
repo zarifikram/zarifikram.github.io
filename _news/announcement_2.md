@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: I have been promoted to fifth year in classical music training.
+date: 2023-03-10 16:11:00-0400
 inline: false
 ---
 
