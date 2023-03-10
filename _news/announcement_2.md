@@ -9,9 +9,15 @@ It was difficult, amidst all the things I had this year. I was not sure whether 
 
 ***
 
-<div class="row mt-3">
+<!-- <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/classical.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div> -->
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
