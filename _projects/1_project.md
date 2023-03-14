@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: BABO
+description: Named Bidirection Autonomous roBot with Obstacle avoidance (BABO), it uses Hierarchical Q learning to learn how to crawl forward while avoiding obstacle. 
+img: assets/img/babo.png
 importance: 1
-category: work
+category: academic
+redirect: https://www.youtube.com/watch?v=kY4_WdqhLQ4
 ---
 
 Every project has a beautiful feature showcase page.

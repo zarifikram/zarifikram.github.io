@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: EventBuddy
+description: Built for CSE 216 (Database) final project, it is a website for attending events together with like-minded buddies.
+img: assets/img/eventbuddy.jpg
+redirect: https://www.youtube.com/watch?v=XUE3vatEm4A&t=22s
 importance: 3
-category: work
+category: academic
 ---
 
 Every project has a beautiful feature showcase page.

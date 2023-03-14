@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Solaris
-description: project for NASA Space Apps Challange 2022
+description: Project for NASA Space Apps Challange 2021. It uses space dataset to correctly predict opmimal solar panel tilt, demostrating the use with IoT.
 img: assets/img/solaris.png
 importance: 3
 category: hackathon
+redirect: https://2021.spaceappschallenge.org/challenges/statements/you-are-my-sunshine/teams/team-solaris/project
 ---
 
 This is a line. 

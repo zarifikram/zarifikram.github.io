@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
+title: 4-bit Processor (MIPS)
+description: Built on breadboard with 19 ICs, this MIPS can run MIPS code with a 4-bit ALU
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: academic
 ---
 
 Every project has a beautiful feature showcase page.

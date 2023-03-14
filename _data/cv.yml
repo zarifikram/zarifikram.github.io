@@ -35,12 +35,13 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Undergraduate Research Intern
+      institution: University of California, Santa Cruz
+      year: 2021 - 
       description:
-        - Description 1.
-        - Description 2.
+        - Complex roundabout generation with pcg techniques (IV 2023)
+        - Simple but expressive environment generation for pedestrian behavior modelling (IV 2023)
+        - Pedestrian tragectory analysis
     - title: Undergraduate Research Assistant
       institution: Accident Research Institute, Bangladesh University of Engineering and Technology
       year: 2021 - 2022
