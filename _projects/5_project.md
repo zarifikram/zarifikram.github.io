@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: Solaris
+description: project for NASA Space Apps Challange 2022
+img: assets/img/solaris.png
 importance: 3
-category: fun
+category: hackathon
 ---
 
 Every project has a beautiful feature showcase page.

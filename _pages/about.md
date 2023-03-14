@@ -9,8 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>House 116</p>
-    <p>Road 9a, Dhanmondi r/a</p>
+    <p>Dhanmondi R/A</p>
     <p>Dhaka-1209, Bangladesh</p>
 
 news: true  # includes a list of news items

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: NazrulDex
+description: app made for the Nazrul Sangeet community for ease of access of lyrics and song information 
+img: assets/img/nazruldex2.webp
 importance: 3
 category: fun
 ---
