@@ -6,7 +6,7 @@ image: /images/crispedit.pdf
 categories: research
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Arad Firouzkouhi, Stephen Tu, Mahdi Soltanolkotabi, Paria Rashidinejad"
-venue: "arXiv preprint"
+venue: "ICML 2026"
 code: https://github.com/zarifikram/crispedit
 arxiv: https://arxiv.org/abs/2602.15823
 paper: https://arxiv.org/abs/2602.15823
