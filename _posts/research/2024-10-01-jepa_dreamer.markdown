@@ -6,7 +6,7 @@ image: /images/ball_disappear.pdf
 categories: research
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Miranda Anna Christ, Ling Pan, Dianbo Liu"
-venue: "7th Robot Learning Workshop, ICLR 2025"
+venue: "7th Robot Learning Workshop, ICLR"
 # code: https://github.com/zarifikram/egfn
 # arxiv: https://arxiv.org/abs/2402.02186
 paper: https://openreview.net/forum?id=4rON0AlI2S
