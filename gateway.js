@@ -6,11 +6,12 @@
   const randomBetween = (minimum, maximum) => Math.random() * (maximum - minimum) + minimum;
 
   const desktop = $('#desktop');
-  const windows = $$('[data-window]');
+  const getWindows = () => $$('[data-window]');
   const routeStatus = $('#route-status');
   const startButton = $('#start-button');
   const startMenu = $('#start-menu');
   const shutdownScreen = $('#shutdown-screen');
+  const adwareTemplate = $('#adware-template');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   let topLayer = 100;
@@ -19,7 +20,7 @@
   function bringToFront(windowElement) {
     if (!windowElement) return;
     topLayer += 1;
-    windows.forEach((item) => item.classList.remove('is-active'));
+    getWindows().forEach((item) => item.classList.remove('is-active'));
     windowElement.hidden = false;
     windowElement.classList.remove('is-active');
     void windowElement.offsetWidth;
@@ -41,16 +42,6 @@
     windowElement.hidden = false;
     bringToFront(windowElement);
   }
-
-  windows.forEach((windowElement) => {
-    windowElement.addEventListener('pointerdown', () => bringToFront(windowElement));
-    $$('[data-close]', windowElement).forEach((button) => {
-      button.addEventListener('click', (event) => {
-        event.stopPropagation();
-        closeWindow(windowElement);
-      });
-    });
-  });
 
   $$('[data-open]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
@@ -107,7 +98,20 @@
     handle.addEventListener('pointercancel', finishDrag);
   }
 
-  windows.forEach(installWindowDrag);
+  function registerWindow(windowElement) {
+    if (!windowElement || windowElement.dataset.windowReady === 'true') return;
+    windowElement.dataset.windowReady = 'true';
+    windowElement.addEventListener('pointerdown', () => bringToFront(windowElement));
+    $$('[data-close]', windowElement).forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeWindow(windowElement);
+      });
+    });
+    installWindowDrag(windowElement);
+  }
+
+  getWindows().forEach(registerWindow);
 
   function closeStartMenu() {
     if (!startMenu || !startButton) return;
@@ -128,7 +132,7 @@
   document.addEventListener('click', closeStartMenu);
 
   function shuffleDesktop() {
-    const movable = windows.filter((windowElement) => !windowElement.hasAttribute('data-persistent') && !windowElement.hidden);
+    const movable = getWindows().filter((windowElement) => !windowElement.hasAttribute('data-persistent') && !windowElement.hidden);
     movable.forEach((windowElement, index) => {
       const bounds = windowElement.getBoundingClientRect();
       const desiredLeft = randomBetween(8, Math.max(9, window.innerWidth - bounds.width - 8));
@@ -146,6 +150,141 @@
   }
 
   $('#shuffle-desktop')?.addEventListener('click', shuffleDesktop);
+
+  const adwarePayloads = [
+    {
+      theme: 'danger',
+      title: 'IK-RAM_SECURITY_CENTER',
+      kicker: 'CRITICAL MEMORY WARNING',
+      headline: 'YOUR PC HAS ONLY 0 MB OF IK-RAM',
+      copy: 'Ordinary RAM cannot run researcher.exe and tenor.dll at the same time.',
+      action: 'DOWNLOAD MORE IK-RAM',
+      target: 'ikram-window'
+    },
+    {
+      theme: 'music',
+      title: 'FREE_TENOR_TOOLBAR.EXE',
+      kicker: 'ONE-CLICK VOCAL OPTIMIZATION',
+      headline: 'ADD 7 SUSPICIOUS OCTAVES NOW',
+      copy: 'Includes automatic vibrato, academic reverb, and a toolbar nobody requested.',
+      action: 'INSTALL HIGH C',
+      target: 'identity-window'
+    },
+    {
+      theme: 'world',
+      title: 'WORLD_MODEL_DEFENDER_95',
+      kicker: '1 SEVERE THREAT DETECTED',
+      headline: 'REALITY.EXE IS OUTSIDE THE LATENT SPACE',
+      copy: 'Quarantine the real world before it contaminates your predictions.',
+      action: 'MODEL IT ANYWAY',
+      target: 'error-window'
+    },
+    {
+      theme: 'prize',
+      title: 'CONGRATULATIONS_RESEARCHER!!!',
+      kicker: 'YOU ARE VISITOR 0x5A_RIF',
+      headline: 'YOU WON 3 FREE CITATIONS',
+      copy: 'Claim before Reviewer #2 wakes up. Impact factor and causality not included.',
+      action: 'CLAIM FAKE IMPACT'
+    },
+    {
+      theme: 'cat',
+      title: 'CAT-CHA_VERIFICATION',
+      kicker: 'ARE YOU A WORLD MODEL?',
+      headline: 'SELECT EVERY SQUARE CONTAINING SUPERVISION',
+      copy: 'There is only one square. The cat is already corresponding author.',
+      action: 'I AM NOT LATENT',
+      target: 'supervisor-window'
+    },
+    {
+      theme: 'ram',
+      title: 'ACADEMIC_SPEED_BOOSTER',
+      kicker: 'DOWNLOAD COMPLETE-ISH',
+      headline: 'IK-RAM IS NOW 640% MORE IKRAM',
+      copy: 'Possible side effects: roundabouts, masked priors, and singing during backpropagation.',
+      action: 'MORE MORE RAM',
+      target: 'ikram-window'
+    }
+  ];
+
+  let adwareCount = 0;
+
+  function spawnAdware(payload = adwarePayloads[adwareCount % adwarePayloads.length]) {
+    if (!desktop || !adwareTemplate) return null;
+    const existing = $$('.adware-window', desktop);
+    if (existing.length >= 7) existing[0].remove();
+
+    adwareCount += 1;
+    const popup = adwareTemplate.content.firstElementChild.cloneNode(true);
+    const title = $('[data-adware-title]', popup);
+    const titleId = `adware-title-${adwareCount}`;
+    popup.id = `adware-${adwareCount}`;
+    popup.dataset.adwareTheme = payload.theme;
+    popup.setAttribute('aria-labelledby', titleId);
+    popup.style.setProperty('--ad-tilt', `${randomBetween(-3.2, 3.2).toFixed(1)}deg`);
+    title.id = titleId;
+    title.textContent = payload.title;
+    $('[data-adware-kicker]', popup).textContent = payload.kicker;
+    $('[data-adware-headline]', popup).textContent = payload.headline;
+    $('[data-adware-copy]', popup).textContent = payload.copy;
+
+    const action = $('[data-adware-action]', popup);
+    const meter = $('.adware-meter', popup);
+    action.textContent = payload.action;
+    action.addEventListener('click', (event) => {
+      event.stopPropagation();
+      meter.classList.add('is-complete');
+      action.textContent = 'TOO LATE — INSTALLED';
+      action.disabled = true;
+      if (routeStatus) routeStatus.textContent = 'Harmless nonsense successfully installed';
+      window.setTimeout(() => {
+        if (payload.target) openWindow(payload.target);
+        spawnAdware();
+      }, reducedMotion.matches ? 0 : 260);
+    });
+
+    desktop.append(popup);
+    const popupWidth = popup.offsetWidth;
+    const popupHeight = popup.offsetHeight;
+    const maxLeft = Math.max(8, window.innerWidth - popupWidth - 8);
+    const maxTop = Math.max(58, window.innerHeight - popupHeight - 52);
+    popup.style.left = `${randomBetween(8, maxLeft)}px`;
+    popup.style.top = `${randomBetween(58, maxTop)}px`;
+    registerWindow(popup);
+    bringToFront(popup);
+    return popup;
+  }
+
+  function spawnAdwareSwarm(amount = 4) {
+    const popupTotal = reducedMotion.matches ? Math.min(amount, 2) : amount;
+    for (let index = 0; index < popupTotal; index += 1) {
+      window.setTimeout(() => spawnAdware(), reducedMotion.matches ? 0 : index * 115);
+    }
+  }
+
+  $$('[data-malware-swarm]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const ikramWindow = $('#ikram-window');
+      const readout = $('#ikram-readout');
+      openWindow('ikram-window');
+      ikramWindow?.classList.remove('is-installed', 'is-installing');
+      void ikramWindow?.offsetWidth;
+      ikramWindow?.classList.add('is-installing');
+      if (readout) readout.textContent = 'Downloading personality modules from a very convincing rectangle...';
+      if (routeStatus) routeStatus.textContent = 'Downloading 4096 MB of IK-RAM from the definitely-real internet';
+      spawnAdwareSwarm();
+      window.setTimeout(() => {
+        ikramWindow?.classList.remove('is-installing');
+        ikramWindow?.classList.add('is-installed');
+        if (readout) readout.textContent = '4096 MB installed. Computer now 640% more Ikram.';
+      }, reducedMotion.matches ? 0 : 1180);
+      closeStartMenu();
+    });
+  });
+
+  $('[data-decline-ikram]')?.addEventListener('click', () => {
+    window.setTimeout(() => spawnAdware(adwarePayloads[0]), reducedMotion.matches ? 0 : 120);
+  });
 
   const routeLinks = $$('a[href="./fun/"], a[href="./me/"]');
   routeLinks.forEach((link) => {
@@ -213,7 +352,7 @@
   });
 
   window.addEventListener('resize', () => {
-    windows.forEach((windowElement) => {
+    getWindows().forEach((windowElement) => {
       const bounds = windowElement.getBoundingClientRect();
       if (bounds.left > window.innerWidth - 35 || bounds.top > window.innerHeight - 35) {
         windowElement.dataset.dragX = '0';
@@ -232,4 +371,10 @@
   }
 
   window.setTimeout(() => bringToFront($('#selected-window')), 260);
+  if (window.innerWidth > 510) {
+    window.setTimeout(() => openWindow('ikram-window'), reducedMotion.matches ? 0 : 650);
+  }
+  if (window.innerWidth > 900 && !reducedMotion.matches) {
+    window.setTimeout(() => spawnAdware(adwarePayloads[2]), 1050);
+  }
 })();
