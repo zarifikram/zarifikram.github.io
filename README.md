@@ -6,11 +6,11 @@ To host locally, run `jekyll serve --incremental`
 
 ## Routes
 
-- `/` is the gateway between the two versions.
-- `/me/` is the sensible academic portfolio.
-- `/fun/` is the Dadaist anti-portfolio.
+- `/` is the academic portfolio.
+- `/void/` is the Dadaist anti-portfolio.
+- `/me/` redirects to the academic portfolio for old links.
 
-Post pages are generated under `/archive/:categories/:title/` so they cannot overwrite the root gateway.
+Post pages are generated under `/archive/:categories/:title/`.
 
 ## Old text
 

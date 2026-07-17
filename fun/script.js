@@ -18,8 +18,6 @@
     lastNoiseAt: 0
   };
 
-  const bootScreen = $('#boot-screen');
-  const enterButton = $('#enter-site');
   const soundToggle = $('#sound-toggle');
   const popupLayer = $('#popup-layer');
   const popupTemplate = $('#popup-template');
@@ -80,12 +78,6 @@
     oscillator.stop(endsAt + 0.02);
   }
 
-  function playBootNoise() {
-    [110, 164.81, 246.94, 369.99].forEach((frequency, index) => {
-      tone(frequency, index * 0.055, 0.14, index % 2 ? 'square' : 'sawtooth', 0.022);
-    });
-  }
-
   function playBlip(pitch = 440) {
     tone(pitch, 0, 0.045, 'square', 0.018);
     tone(pitch * 1.51, 0.035, 0.035, 'sine', 0.012);
@@ -108,7 +100,7 @@
     });
   }
 
-  function playResearchOrchestra() {
+  function playUnreliableOrchestra() {
     const latentScale = [110, 164.81, 246.94, 293.66, 220, 369.99, 277.18, 440, 123.47];
     latentScale.forEach((frequency, index) => {
       const offset = index * 0.105;
@@ -116,14 +108,6 @@
       if (index % 3 === 0) tone(frequency * 2.01, offset + 0.035, 0.09, 'square', 0.012);
     });
   }
-
-  enterButton?.addEventListener('click', () => {
-    setSound(true);
-    playBootNoise();
-    bootScreen?.classList.add('is-gone');
-    document.body.classList.add('portal-open');
-    window.setTimeout(() => bootScreen?.setAttribute('hidden', ''), 650);
-  });
 
   soundToggle?.addEventListener('click', () => {
     setSound(!state.soundEnabled);
@@ -148,17 +132,21 @@
       title: 'EVIDENCE REORGANIZED',
       message: 'Chronology has been removed for cleaning. Citations remain structurally anxious.'
     },
-    identity: {
-      title: 'IDENTITY VERIFICATION FAILED',
+    authorship: {
+      title: 'AUTHORSHIP VERIFICATION FAILED',
       message: 'The cat supplied stronger credentials and is now corresponding author.'
+    },
+    ikram: {
+      title: 'IK-RAM_INSTALLATION_COMPLETE',
+      message: '4096 MB acquired from a very convincing rectangle. The browser is now unreasonably personal.'
     },
     terms: {
       title: 'CONSENT NEARLY DETECTED',
       message: 'Additional clauses have been deployed between you and the alleged bottom.'
     },
     orchestra: {
-      title: 'CONDUCTOR GRADIENT OVERFLOW',
-      message: 'The tenor backpropagated through the score. Three latent notes are now corresponding authors.'
+      title: 'CONDUCTOR_LOST_THE_SCORE',
+      message: 'The arrangement escaped its frame. Three notes are refusing supervision.'
     }
   };
 
@@ -440,14 +428,14 @@
     termObserver.observe(termsSentinel);
   }
 
-  /* The initial fake error refuses to resolve. */
+  /* The IK-RAM installer refuses to clarify its units. */
   const systemWindow = $('.system-window');
   const systemMessage = $('.system-window .window-body p');
   const detailMessages = [
-    '<strong>Details:</strong> reality returned NaN opinions and one tenor.',
-    '<strong>Details:</strong> expected future; received roundabout.',
-    '<strong>Details:</strong> the loss is humming in B-flat.',
-    '<strong>Details:</strong> representation robust, interface emotionally unavailable.'
+    '<strong>Details:</strong> available memory: 0 MB; available Ikram: unreasonable.',
+    '<strong>Details:</strong> checksum: I-K-R-A-M; warranty: missing.',
+    '<strong>Details:</strong> source: a very convincing rectangle.',
+    '<strong>Details:</strong> projected speed: 640%; supporting evidence: 0%.'
   ];
 
   $('[data-window-action="details"]')?.addEventListener('click', () => {
@@ -455,7 +443,7 @@
     playGlitch();
   });
 
-  $('[data-window-action="ignore"]')?.addEventListener('click', () => {
+  $('[data-window-action="install"]')?.addEventListener('click', () => {
     if (!systemWindow) return;
     const x = randomBetween(-180, 180);
     const y = randomBetween(-100, 130);
@@ -463,13 +451,16 @@
     systemWindow.style.setProperty('--drag-y', `${y}px`);
     systemWindow.dataset.dragX = String(x);
     systemWindow.dataset.dragY = String(y);
-    if (systemMessage) systemMessage.innerHTML = '<strong>Ignored:</strong> the warning has moved closer in conceptual space.';
+    systemWindow.classList.add('is-installing');
+    if (systemMessage) systemMessage.innerHTML = '<strong>IK-RAM INSTALLED.</strong><br>The computer is now 640% more Ikram.';
+    spawnPopup('ikram');
     playGlitch();
+    window.setTimeout(() => systemWindow.classList.remove('is-installing'), 1200);
   });
 
-  $('.portrait-cat')?.addEventListener('dblclick', () => spawnPopup('identity'));
+  $('.portrait-cat')?.addEventListener('dblclick', () => spawnPopup('authorship'));
 
-  /* Cryptic hover audio stays quiet until the entrance click opts in. */
+  /* Cryptic hover audio stays quiet until a sound control opts in. */
   $$('.maze-link, .paper-card, .review-stamp, .machine-score, .merz-score, .research-scrap').forEach((element, index) => {
     element.addEventListener('pointerenter', () => {
       if (index % 4 === 0) playBlip(170 + (index * 23));
@@ -485,7 +476,7 @@
   const orchestra = $('#orchestra');
   const orchestraStage = $('#orchestra-stage');
   const dadaConductor = $('#dada-conductor');
-  const scoreGlyphs = ['∇', '♫', 'zₜ', 'GFN', 'MASK', 'SA', 'RE', 'ORAL', 'TENOR', '???', 'p(x)', 'CAT'];
+  const scoreGlyphs = ['∇', '♫', 'zₜ', 'MASK', 'SA', 'RE', 'ORBIT', 'AGAIN', 'NOISE', '???', 'IF', 'CAT'];
   let orchestraTimer = 0;
 
   function releaseScoreGlyph() {
@@ -509,7 +500,7 @@
     void orchestra?.offsetWidth;
     orchestra?.classList.add('is-conducting');
     dadaConductor.setAttribute('aria-pressed', 'true');
-    playResearchOrchestra();
+    playUnreliableOrchestra();
 
     for (let index = 0; index < 15; index += 1) {
       window.setTimeout(releaseScoreGlyph, index * 65);
@@ -553,7 +544,7 @@
 
   /* Cursor annotation and clock: useful information was considered, then rejected. */
   const cursorLabel = $('#cursor-label');
-  const cursorPhrases = ['THIS WAY?', 'NO, LEFT', 'RESEARCH ADJACENT', 'CURSOR VERIFIED', 'DO NOT TRUST ARROWS', '↘ MAYBE'];
+  const cursorPhrases = ['THIS WAY?', 'NO, LEFT', 'OBJECT ADJACENT', 'CURSOR VERIFIED', 'DO NOT TRUST ARROWS', '↘ MAYBE'];
   let cursorFrame = 0;
   let cursorX = 0;
   let cursorY = 0;

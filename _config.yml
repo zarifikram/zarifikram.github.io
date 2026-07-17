@@ -55,8 +55,7 @@ url: "https://zarifikram.github.io" # the base hostname & protocol for your site
 # !! You don't need to change any of the configuration flags below !!
 #
 
-# Keep generated post pages away from the root gateway. The portfolio itself
-# is rendered at /me/ and the post URLs are implementation-detail archives.
+# Keep generated post pages in their own archive, away from the root portfolio.
 permalink: /archive/:categories/:title/
 
 
