@@ -9,7 +9,7 @@ categories: talks
 venue: "Beijing Institute of Technology"
 # code: https://github.com/AugmentedDesignLab/junction-art
 # arxiv: https://arxiv.org/abs/2303.17900
-slides: docs/wm_lecture_bit.pdf
+slides: /docs/wm_lecture_bit.pdf
 ---
 
 <!-- Procedural content generation method to generate infinite complex roundabout HD maps that can be used in autonomous vehicle testing simulators. -->

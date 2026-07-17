@@ -11,7 +11,7 @@ venue: "ICLR 2025 Workshop on World Models: Understanding, Modelling and Scaling
 # arxiv: https://arxiv.org/abs/2402.02186
 # project_page: https://openreview.net/forum?id=2gTEW29qsM
 video: https://iclr.cc/virtual/2025/10000101
-slides: docs/gitstorm.pdf
+slides: /docs/gitstorm.pdf
 paper: https://openreview.net/forum?id=vRdn74Jkqp
 accolade: "Outstanding paper award"
 ---

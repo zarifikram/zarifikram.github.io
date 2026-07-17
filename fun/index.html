@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zarif Ikram's anti-portfolio: research, world models, music, and deliberately unhelpful machinery.">
+  <meta name="author" content="Zarif Ikram">
+  <meta name="theme-color" content="#e8dfc7">
+  <meta property="og:title" content="Zarif Ikram — The Anti-Portal">
+  <meta property="og:description" content="An academic website escaped from its grid.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zarifikram.github.io/fun/">
+  <meta property="og:image" content="https://zarifikram.github.io/images/avater.jpeg">
+  <link rel="canonical" href="https://zarifikram.github.io/fun/">
+  <title>Zarif Ikram / The Anti-Portal</title>
+  <script>document.documentElement.className = 'js';</script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip the maze and inspect the evidence</a>
+
+  <div class="boot-screen" id="boot-screen" role="dialog" aria-modal="true" aria-labelledby="boot-title">
+    <div class="boot-tape" aria-hidden="true">CAUTION / CAUTION / CAUTION / CAUTION / CAUTION / CAUTION / CAUTION /</div>
+    <div class="boot-box">
+      <p class="boot-kicker">ACADEMIC WEBSITE DETECTED</p>
+      <h1 id="boot-title">The grid has been<br>successfully misplaced.</h1>
+      <div class="boot-meter" aria-hidden="true"><span></span></div>
+      <p>This page contains research, cats, low-curvature projections, and one button that has no intention of cooperating.</p>
+      <div class="boot-actions">
+        <button type="button" class="boot-enter" id="enter-site">ENTER INCORRECTLY</button>
+        <a href="../me/">use the sensible website</a>
+      </div>
+      <small>Your first click may wake the tiny synthesizer. It can be muted at any time.</small>
+    </div>
+  </div>
+
+  <div class="paper-noise" aria-hidden="true"></div>
+  <div class="registration-mark mark-a" aria-hidden="true">+</div>
+  <div class="registration-mark mark-b" aria-hidden="true">+</div>
+  <div class="cursor-label" id="cursor-label" aria-hidden="true">THIS WAY?</div>
+
+  <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Sound is initially asleep">
+    <span aria-hidden="true">♫</span> SOUND: ASLEEP
+  </button>
+
+  <header class="hero" id="top">
+    <div class="edition-strip" aria-hidden="true">
+      <span>PERSONAL PORTFOLIO — UNLICENSED EMOTIONAL FORKLIFT</span>
+      <span>VOL. ∞</span>
+      <span id="live-clock">TIME IS LOADING</span>
+      <span>PRICE: ONE SUSPICION</span>
+    </div>
+
+    <nav class="maze" id="maze" aria-label="Scattered navigation">
+      <a class="maze-link draggable omen" data-omen="The biography is mostly domesticated." href="#identity" style="--x: 4%; --y: 14%; --tilt: -7deg;">WHO IS ZARIF?</a>
+      <a class="maze-link draggable omen loud" data-omen="Peer review but make it furniture." href="#research" style="--x: 69%; --y: 11%; --tilt: 5deg;">PAPERS ↘</a>
+      <a class="maze-link draggable omen" data-omen="A lecture is a PDF with a pulse." href="#transmissions" style="--x: 78%; --y: 61%; --tilt: -3deg;">TRANSMISSIONS</a>
+      <a class="maze-link draggable omen" data-omen="The tenor has entered the latent space." href="#music" style="--x: 12%; --y: 72%; --tilt: 8deg;">HE SINGS TOO?</a>
+      <a class="maze-link draggable omen" data-omen="Finally, an honest destination." href="#nothing" style="--x: 46%; --y: 84%; --tilt: -11deg;">GO NOWHERE</a>
+      <a class="maze-link draggable omen sensible" data-omen="Cowardice, but elegantly typeset." href="../me/" style="--x: 42%; --y: 5%; --tilt: 2deg;">NORMAL WEBSITE</a>
+      <a class="maze-link draggable omen" data-omen="Meteorology is a branch of biography." href="https://www.timeanddate.com/weather/bangladesh/dhaka" target="_blank" rel="noreferrer" style="--x: 2%; --y: 46%; --tilt: 4deg;">DHAKA WEATHER</a>
+      <button class="maze-link draggable omen popup-trigger" data-popup="committee" data-omen="The committee has no members and a quorum of seven." type="button" style="--x: 64%; --y: 39%; --tilt: -6deg;">SUMMON COMMITTEE</button>
+    </nav>
+
+    <div class="masthead" aria-labelledby="site-title">
+      <p class="masthead-pre">A MOSTLY TRUE INDEX OF</p>
+      <h1 id="site-title"><span>ZARIF</span><span>IKRAM</span></h1>
+      <p class="bangla">জারিফ ইকরাম</p>
+      <p class="masthead-foot">RESEARCHER / TENOR / ACCIDENTAL WEB OBJECT</p>
+    </div>
+
+    <figure class="portrait portrait-cat draggable">
+      <div class="tape tape-top" aria-hidden="true"></div>
+      <img src="../images/avater.jpeg" alt="Zarif Ikram behind a white cat, both looking unconvinced">
+      <figcaption>FIG. 01: PRINCIPAL INVESTIGATOR &amp; ACTUAL SUPERVISOR</figcaption>
+    </figure>
+
+    <figure class="portrait portrait-vincent draggable">
+      <img src="./assets/van-gogh-self-portrait.jpg" alt="Vincent van Gogh's 1887 self-portrait, appearing here without appointment">
+      <figcaption>NOT ZARIF. REPEAT: NOT ZARIF.</figcaption>
+    </figure>
+
+    <div class="eye-seal draggable omen" data-omen="The eye has tenure." aria-hidden="true">
+      <svg viewBox="0 0 260 150" role="img" aria-label="A hand-drawn eye">
+        <path d="M10 76 Q63 8 130 27 Q197 8 250 76 Q197 142 130 123 Q63 142 10 76Z" fill="#f7efda" stroke="currentColor" stroke-width="8"/>
+        <circle cx="130" cy="76" r="39" fill="#d7ff00" stroke="currentColor" stroke-width="8"/>
+        <circle cx="130" cy="76" r="15" fill="currentColor"/>
+        <path d="M21 35 5 10M58 20 52 0M199 20 207 0M236 38 256 14" fill="none" stroke="currentColor" stroke-width="7"/>
+      </svg>
+      <span>OBSERVATION CHANGES THE FOOTER</span>
+    </div>
+
+    <div class="fake-window system-window draggable" role="group" aria-label="Fake system message">
+      <div class="window-titlebar"><span>zarif.exe</span><span aria-hidden="true">_ □ ×</span></div>
+      <div class="window-body">
+        <div class="error-icon" aria-hidden="true">!</div>
+        <p><strong>Warning:</strong> a world model has encountered the real world.</p>
+      </div>
+      <div class="window-actions">
+        <button type="button" data-window-action="ignore">Ignore</button>
+        <button type="button" data-window-action="details">Unhelpful details</button>
+      </div>
+    </div>
+
+    <section class="identity" id="identity" aria-labelledby="identity-title">
+      <p class="section-number">DOSSIER 00½</p>
+      <h2 id="identity-title">WHO PUT A BIOGRAPHY HERE?</h2>
+      <div class="bio-strips">
+        <p>I am a <strong>1st year Annenberg PhD fellow</strong> at <a href="https://viterbischool.usc.edu">USC</a>, advised by <a href="https://pariard.github.io">Paria Rashidinejad</a>. I hold a B.Sc. from CSE, BUET (Class of '25).</p>
+        <p>I am a research intern at <a href="https://www.microsoft.com/en-us/research/lab/ai-frontiers/">Microsoft Research AI Frontiers, NYC</a> under <a href="https://hunch.net/~jl/">John Langford</a> and <a href="https://teapearce.github.io/">Tim Pearce</a>.</p>
+        <p>Previously, I studied world models under <a href="https://scholar.google.com/citations?user=kGSzBpMAAAAJ&amp;hl=en">Dianbo Liu</a> at <a href="https://ai.nus.edu.sg">NUS</a> and behavior modeling under <a href="https://en.wikipedia.org/wiki/Jim_Whitehead_(computer_scientist)">Jim Whitehead</a> at <a href="https://engineering.ucsc.edu">UCSC</a>.</p>
+        <p>A tenor with the <a href="https://music.usc.edu/ensemble/concert-choir/">USC Thornton Concert Choir</a> under <a href="https://music.usc.edu/tram-sparks/">Tram Sparks</a>, my musical background is in Indian classical music under <a href="https://www.youtube.com/watch?v=fTf4Rdon4rE">Asit Dey</a>. I trained at <a href="https://chhayanaut.org/chhayanaut">Chhayanaut Music School</a> and also play harmonium, guitar, and piano.</p>
+      </div>
+      <div class="contact-ransom" aria-label="Contact and profiles">
+        <span>CONTACT: zarifikram003 [AT] gmail [DOT] com</span>
+        <a href="https://github.com/zarifikram">GITHUB</a>
+        <a href="https://scholar.google.com/citations?user=_x0dj7sAAAAJ&amp;hl=en">SCHOLAR</a>
+        <a href="https://twitter.com/TheZarifIkram">X</a>
+        <a href="https://www.youtube.com/c/zarifikram">YOUTUBE</a>
+        <a href="https://www.admonymous.co/zarif-ikram">ANONYMOUS FEEDBACK</a>
+      </div>
+    </section>
+
+    <div class="hero-caption" aria-hidden="true">PLEASE DO NOT ALIGN ANYTHING</div>
+  </header>
+
+  <div class="marquee" aria-label="Recent announcements">
+    <div class="marquee-track">
+      <span>CRISPEDIT → ICML 2026</span>
+      <span>GIT-STORM → OUTSTANDING PAPER</span>
+      <span>EGFN → TMLR</span>
+      <span>GG-DWJS → AI4X ORAL</span>
+      <span>THE CAT DECLINED COMMENT</span>
+      <span>CRISPEDIT → ICML 2026</span>
+      <span>GIT-STORM → OUTSTANDING PAPER</span>
+      <span>EGFN → TMLR</span>
+      <span>GG-DWJS → AI4X ORAL</span>
+      <span>THE CAT DECLINED COMMENT</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <p class="rubber-stamp">MISSION STATEMENT / MISPRINT 02</p>
+      <h2 id="manifesto-title">I am interested in fundamental AI problems in <em>world modeling</em> and <em>continual improvement</em>.</h2>
+      <p class="manifesto-aside">Unfortunately, this page has neither a model nor evidence of improvement.</p>
+      <div class="redaction" aria-hidden="true">SEAMLESS USER EXPERIENCE</div>
+    </section>
+
+    <section class="research-lab" id="research" aria-labelledby="research-title">
+      <div class="section-heading research-heading">
+        <div>
+          <p class="section-number">EVIDENCE LOCKER 01—09</p>
+          <h2 id="research-title">RESEARCH, AFTER THE FILING CABINET EXPLODED</h2>
+        </div>
+        <button class="chaos-button omen" id="shuffle-papers" type="button" data-omen="Entropy is not a publication metric.">REORGANIZE EVIDENCE</button>
+      </div>
+
+      <div class="paper-collage" id="paper-collage">
+        <article class="paper-card paper-featured draggable-card" style="--tilt: -1.8deg; --ink: #ff3b18;" tabindex="0">
+          <div class="paper-index">PAPER 09 / LATEST DISTURBANCE</div>
+          <div class="paper-visual pdf-visual crisp-visual" role="img" aria-label="Abstract low-curvature projection diagram">
+            <span class="curve curve-a"></span><span class="curve curve-b"></span><span class="project-arrow">↘</span><b>LOW<br>CURVATURE</b>
+          </div>
+          <div class="paper-copy">
+            <h3>CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Arad Firouzkouhi, Stephen Tu, Mahdi Soltanolkotabi, Paria Rashidinejad</p>
+            <p class="venue"><em>ICML</em>, 2026</p>
+            <div class="paper-links">
+              <a href="https://zarifikram.github.io/CrispEdit/">project page</a>
+              <a href="https://arxiv.org/abs/2602.15823">paper</a>
+              <a href="https://github.com/zarifikram/crispedit">code</a>
+            </div>
+          </div>
+          <span class="drag-note" aria-hidden="true">DRAG THE FINDING</span>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: 2.4deg; --ink: #0046ff;" tabindex="0">
+          <div class="paper-index">PAPER 08 / EVOLVE FIRST, ASK LATER</div>
+          <div class="paper-visual"><img src="../images/egfn_architecture.png" alt="Evolution Guided Generative Flow Networks architecture"></div>
+          <div class="paper-copy">
+            <h3>Evolution Guided Generative Flow Networks</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Ling Pan, Dianbo Liu</p>
+            <p class="venue"><em>Transactions on Machine Learning Research</em>, 2025<br><em>ICLR GEM Bio workshop</em></p>
+            <p class="accolade">★ BEST POSTER @ EEML 2024</p>
+            <div class="paper-links">
+              <a href="https://zarifikram.github.io/EGFN/">project page</a>
+              <a href="https://openreview.net/forum?id=UgZIR6TF5N">paper</a>
+              <a href="https://arxiv.org/abs/2402.02186">arXiv</a>
+              <a href="https://github.com/zarifikram/egfn">code</a>
+            </div>
+          </div>
+          <span class="drag-note" aria-hidden="true">THIS CORNER IS OPTIONAL</span>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: -3.1deg; --ink: #bd005f;" tabindex="0">
+          <div class="paper-index">PAPER 07 / LATENT JUDICIARY</div>
+          <div class="paper-visual"><img src="../images/jedi.png" alt="JEDI latent end-to-end diffusion architecture"></div>
+          <div class="paper-copy">
+            <h3>JEDI: Latent End-to-end Diffusion Mitigates Agent-Human Performance Asymmetry in Model-Based Reinforcement Learning</h3>
+            <p class="authors">Jing Yu Lim, <strong>Zarif Ikram</strong>, Samson Yu, Haozhe Ma, Tze-Yun Leong, Dianbo Liu</p>
+            <p class="venue"><em>Preprint</em>, 2025</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2505.19698">arXiv</a></div>
+          </div>
+        </article>
+
+        <article class="paper-card paper-featured draggable-card" style="--tilt: 1.2deg; --ink: #176b2c;" tabindex="0">
+          <div class="paper-index">PAPER 06 / WEATHER EVENT</div>
+          <div class="paper-visual"><img src="../images/gitstorm.png" alt="GIT-STORM MaskGIT prior diagram"></div>
+          <div class="paper-copy">
+            <h3>Masked Generative Priors Improve World Models Sequence Modelling Capabilities</h3>
+            <p class="authors">Cristian Meo*, Mircea Tudor Lică*, <strong>Zarif Ikram*</strong>, Akihiro Nakano, Vedant Shah, Aniket Rajiv Didolkar, Dianbo Liu, Anirudh Goyal, Justin Dauwels</p>
+            <p class="venue"><em>ICLR 2025 Workshop on World Models: Understanding, Modelling and Scaling</em>, 2025</p>
+            <p class="accolade">★ OUTSTANDING PAPER AWARD</p>
+            <div class="paper-links">
+              <a href="https://openreview.net/forum?id=vRdn74Jkqp">paper</a>
+              <a href="https://iclr.cc/virtual/2025/10000101">video</a>
+              <a href="../docs/gitstorm.pdf">slides</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: 3.8deg; --ink: #5922a8;" tabindex="0">
+          <div class="paper-index">PAPER 05 / OBJECT NOT FOUND</div>
+          <div class="paper-visual pdf-visual lost-feature" role="img" aria-label="A tiny feature disappearing from a field">
+            <span class="ball ball-a"></span><span class="ball ball-b"></span><span class="dashed-path"></span><b>small feature<br>departing quietly →</b>
+          </div>
+          <div class="paper-copy">
+            <h3>Small features matter: Robust representation for world models</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Miranda Anna Christ, Ling Pan, Dianbo Liu</p>
+            <p class="venue"><em>7th Robot Learning Workshop, ICLR</em>, 2025</p>
+            <div class="paper-links"><a href="https://openreview.net/forum?id=4rON0AlI2S">paper</a></div>
+          </div>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: -2.3deg; --ink: #b14a00;" tabindex="0">
+          <div class="paper-index">PAPER 04 / PROTEIN CHOREOGRAPHY</div>
+          <div class="paper-visual protein-visual"><img src="../images/gg-dWJS.png" alt="Generated protein structure in green and orange"></div>
+          <div class="paper-copy">
+            <h3>Gradient-guided discrete walk-jump sampling for biological sequence generation</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Dianbo Liu, M Saifur Rahman</p>
+            <p class="venue"><em>Transactions on Machine Learning Research</em>, 2024</p>
+            <p class="accolade">★ RISE 2024 RESEARCH GRANT AWARDEE</p>
+            <div class="paper-links">
+              <a href="https://zarifikram.github.io/gg-dWJS/">project page</a>
+              <a href="https://openreview.net/forum?id=fFVuo4SPfT">paper</a>
+              <a href="https://github.com/zarifikram/gg-dWJS">code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: 2deg; --ink: #005f58;" tabindex="0">
+          <div class="paper-index">PAPER 03 / ROUNDABOUT, PROBABILISTIC</div>
+          <div class="paper-visual wide-visual"><img src="../images/gfn_roundabout.png" alt="Generative flow network procedure for constructing a roundabout"></div>
+          <div class="paper-copy">
+            <h3>Probabilistic Generative Modeling for Procedural Roundabout Generation for Developing Countries</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Ling Pan, Dianbo Liu</p>
+            <p class="venue"><em>NeurIPS RealML Workshop</em>, 2023</p>
+            <div class="paper-links">
+              <a href="https://zarifikram.github.io/gfn-roundabout/">project page</a>
+              <a href="https://arxiv.org/abs/2310.03687">arXiv</a>
+              <a href="https://github.com/AugmentedDesignLab/junction-art/tree/GFlow-Nets">code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card draggable-card" style="--tilt: -4deg; --ink: #d40000;" tabindex="0">
+          <div class="paper-index">PAPER 02 / PEDESTRIANS IN CELLS</div>
+          <div class="paper-visual"><img src="../images/pedgrid.gif" alt="Animated PedGrid pedestrian simulation"></div>
+          <div class="paper-copy">
+            <h3>PedGrid — A Simple yet Expressive Simulation Environment for Pedestrian Behavior Modeling</h3>
+            <p class="authors">Golam Md Muktadir, Taorui Huang, <strong>Zarif Ikram</strong>, Abdul Jawad, Jim Whitehead</p>
+            <p class="venue"><em>IEEE ITSC</em>, 2023</p>
+            <div class="paper-links">
+              <a href="https://pedgrid.readthedocs.io/en/latest/">project page</a>
+              <a href="https://github.com/adhocmaster/gym-pedgrid">code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card paper-featured draggable-card" style="--tilt: 1.7deg; --ink: #222;" tabindex="0">
+          <div class="paper-index">PAPER 01 / CIRCULAR BEGINNING</div>
+          <div class="paper-visual"><img src="../images/roundabout.gif" alt="Animated procedural roundabout generation"></div>
+          <div class="paper-copy">
+            <h3>Procedural Generation of Complex Roundabouts for Autonomous Vehicle Testing</h3>
+            <p class="authors"><strong>Zarif Ikram</strong>, Golam Md Muktadir, Jim Whitehead</p>
+            <p class="venue"><em>IEEE Intelligent Vehicles Symposium (IV)</em>, 2023</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2303.17900">arXiv</a>
+              <a href="https://github.com/AugmentedDesignLab/junction-art">code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="friction-department" aria-labelledby="friction-title">
+      <div class="section-heading friction-heading">
+        <p class="section-number">DEPARTMENT OF PREVENTABLE OBSTACLES</p>
+        <h2 id="friction-title">TWO SERVICES NOBODY REQUESTED</h2>
+      </div>
+
+      <article class="no-click-card">
+        <div class="service-label">SERVICE A / NEGATIVE AFFORDANCE</div>
+        <h3>Apply for absolutely nothing.</h3>
+        <p>The committee is eager not to receive your application.</p>
+        <div class="no-click-arena" id="no-click-arena">
+          <button type="button" id="no-click-button">DO NOT CLICK</button>
+          <span class="evasion-counter" id="evasion-counter">Evasions: 0</span>
+        </div>
+      </article>
+
+      <article class="terms-card">
+        <div class="service-label">SERVICE B / PERPETUAL COMPLIANCE</div>
+        <h3>Terms of Surrender</h3>
+        <p>Please reach the bottom to confirm that no bottom exists.</p>
+        <div class="terms-scroll" id="terms-scroll" tabindex="0" aria-label="Endless terms of service">
+          <div id="terms-body"></div>
+          <div class="terms-sentinel" id="terms-sentinel">LOADING THE NEXT OBLIGATION…</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="transmissions" id="transmissions" aria-labelledby="transmissions-title">
+      <div class="transmission-title-wrap">
+        <p class="section-number">SIGNALS INTERCEPTED / SELECTED TALKS</p>
+        <h2 id="transmissions-title">I LOVE TO SHARE MY EXPERIENCES WITH THE AUDIENCE AND LEARN FROM THEM.</h2>
+      </div>
+      <div class="radio-dial" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="talk-stack">
+        <article class="talk-ticket draggable-card">
+          <p class="ticket-number">TALK № 0002</p>
+          <h3>Masked Generative Priors Improve World Models Sequence Modelling Capabilities</h3>
+          <p><em>ICLR World Models Workshop Oral</em>, 2025</p>
+          <div><a href="https://iclr.cc/virtual/2025/10000101">video signal</a> / <a href="../docs/gitstorm.pdf">slide residue</a></div>
+        </article>
+        <article class="talk-ticket draggable-card">
+          <p class="ticket-number">TALK № 0001</p>
+          <h3>How to Train Your World Models</h3>
+          <p><em>Beijing Institute of Technology</em>, 2024</p>
+          <div><a href="../docs/wm_lecture_bit.pdf">slide residue</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <p class="section-number">BUREAU OF ACADEMIC SERVICES</p>
+      <h2 id="services-title">OFFICIALLY AUTHORIZED TO HAVE OPINIONS</h2>
+      <div class="stamp-row">
+        <div class="review-stamp"><span>REVIEWER</span><strong>ICLR</strong><small>2024—?</small></div>
+        <div class="review-stamp"><span>REVIEWER</span><strong>ICML</strong><small>2025—?</small></div>
+        <div class="review-stamp"><span>REVIEWER</span><strong>NeurIPS</strong><small>2024—?</small></div>
+        <div class="review-stamp"><span>REVIEWER</span><strong>TMLR</strong><small>2024—?</small></div>
+      </div>
+    </section>
+
+    <section class="research-orchestra" id="orchestra" aria-labelledby="orchestra-title">
+      <div class="orchestra-heading">
+        <p class="section-number">EXPERIMENT № 𝄞 / MACHINE-LISTENING FAILURE</p>
+        <h2 id="orchestra-title">THE LATENT <span>ORCHESTRA</span></h2>
+      </div>
+
+      <div class="orchestra-stage" id="orchestra-stage">
+        <div class="score-staff" aria-hidden="true">
+          <span class="score-note note-a">♩</span>
+          <span class="score-note note-b">∇</span>
+          <span class="score-note note-c">♪</span>
+          <span class="score-note note-d">zₜ</span>
+          <span class="score-note note-e">𝄞</span>
+          <span class="score-note note-f">?</span>
+        </div>
+
+        <figure class="machine-score draggable-card omen" data-omen="A machine can turn quickly without arriving anywhere.">
+          <img src="./assets/picabia-machine-tournez-vite.jpg" alt="Francis Picabia's 1917 Dada work Machine Turn Quickly">
+          <figcaption>WORLD MODEL / TURN QUICKLY</figcaption>
+        </figure>
+
+        <figure class="merz-score draggable-card omen" data-omen="The dataset was assembled from the filing cabinet's emotional remains.">
+          <img src="./assets/schwitters-merz-50.jpg" alt="Kurt Schwitters's 1922 Merz 50 collage">
+          <figcaption>DATASET 50 / LABELS LOST</figcaption>
+        </figure>
+
+        <button class="dada-conductor draggable omen" id="dada-conductor" type="button" aria-pressed="false" data-omen="This conductor has never seen a loss curve.">
+          <span class="conductor-halo" aria-hidden="true"></span>
+          <img src="./assets/taeuber-arp-dada-head.jpg" alt="Sophie Taeuber-Arp's 1920 Dada Head, appointed conductor of the research orchestra">
+          <span class="conductor-command">CONDUCT<br>THE MODEL</span>
+        </button>
+
+        <figure class="research-scrap scrap-gitstorm draggable-card">
+          <img src="../images/gitstorm.png" alt="GIT-STORM masked generative prior diagram">
+          <figcaption>MASKED PRIOR / PERCUSSION</figcaption>
+        </figure>
+
+        <figure class="research-scrap scrap-roundabout draggable-card">
+          <img src="../images/roundabout.gif" alt="Procedurally generated roundabout in motion">
+          <figcaption>ENVIRONMENT / RONDO</figcaption>
+        </figure>
+
+        <figure class="research-scrap scrap-protein draggable-card">
+          <img src="../images/gg-dWJS.png" alt="Generated protein structure appearing as an improvised instrument">
+          <figcaption>PROTEIN / VIBRATO</figcaption>
+        </figure>
+
+        <div class="model-orbit orbit-one" aria-hidden="true"><span>G</span><span>F</span><span>N</span></div>
+        <div class="model-orbit orbit-two" aria-hidden="true"><span>W</span><span>M</span><span>?</span></div>
+        <span class="orchestra-word word-research" aria-hidden="true">RESEARCH!</span>
+        <span class="orchestra-word word-tenor" aria-hidden="true">TENOR?</span>
+        <span class="equation-strip" aria-hidden="true">p(zₜ | zₜ₋₁) = ♫ ± CAT</span>
+      </div>
+
+      <p class="orchestra-instruction">CLICK THE HEAD / DRAG THE EVIDENCE / DISTRUST THE TEMPO</p>
+    </section>
+
+    <section class="music" id="music" aria-labelledby="music-title">
+      <div class="music-curtain curtain-left" aria-hidden="true"></div>
+      <div class="music-curtain curtain-right" aria-hidden="true"></div>
+      <div class="music-content">
+        <p class="section-number">SIDE B / THE MODEL BEGINS TO SING</p>
+        <h2 id="music-title">MUSIC</h2>
+
+        <div class="voice-model-score" role="img" aria-label="A musical staff mutating into a neural world model">
+          <svg viewBox="0 0 1000 270" aria-hidden="true">
+            <g class="voice-staff">
+              <path d="M0 55H1000M0 90H1000M0 125H1000M0 160H1000M0 195H1000"/>
+            </g>
+            <path class="voice-wave" d="M0 127 C45 25 85 230 130 127 S220 25 265 127 S355 230 400 127 S490 25 535 127 S625 230 670 127 S760 25 805 127 S895 230 1000 127"/>
+            <g class="latent-graph">
+              <path d="M620 55 735 125 660 210 835 180 920 72M735 125 835 180M660 210 620 55M835 180 920 72"/>
+              <circle cx="620" cy="55" r="16"/><circle cx="735" cy="125" r="21"/><circle cx="660" cy="210" r="13"/><circle cx="835" cy="180" r="24"/><circle cx="920" cy="72" r="17"/>
+            </g>
+          </svg>
+          <span class="solfege syllable-sa">SA</span>
+          <span class="solfege syllable-re">RE</span>
+          <span class="solfege syllable-ga">GA</span>
+          <span class="solfege syllable-ma">MA</span>
+          <span class="voice-equation">VOICE ⇄ WORLD MODEL ⇄ ?</span>
+        </div>
+
+        <button class="play-odd-song omen" id="play-odd-song" type="button" data-omen="No recording was harmed; the browser is improvising.">PLAY 7 QUESTIONABLE NOTES</button>
+
+        <div class="music-columns">
+          <div>
+            <h3>Selected honors</h3>
+            <ol class="honor-roll">
+              <li><strong>Ensemble Award</strong><span>USC Thornton School of Music, 2026</span></li>
+              <li><strong>Lifetime Member Award</strong><span>Notre Dame Cultural Club, 2020</span></li>
+              <li><strong>Honorable Mention Award</strong><span>Notre Dame College, 2019</span></li>
+              <li><strong>Best Singer Award</strong><span>National Board of Education, 2016</span></li>
+            </ol>
+          </div>
+          <div>
+            <h3>Selected television &amp; stage appearances</h3>
+            <ul class="appearance-list">
+              <li>USC Spring Concert, Newman Recital Hall, LA <i>(2026)</i></li>
+              <li>USC Fall Concert, Newman Recital Hall, LA — solo, <i>I'll Be on My Way</i> <i>(2025)</i></li>
+              <li>Classical Music Festival, Chhayanaut Auditorium, Dhaka <i>(2022–2024)</i></li>
+              <li>গানের ঝরণা তলায়, Bengal Foundation <i>(2020)</i></li>
+              <li>নজরুল সঙ্গীত উৎসব, National Museum Auditorium <i>(2019)</i></li>
+              <li>Cultural Ceremony for the Pope's visit, Notre Dame College, Dhaka <i>(2017)</i></li>
+              <li>নজরুল সঙ্গীত উৎসব, Chhayanaut Auditorium, Dhaka <i>(2013–2020)</i></li>
+              <li>গানে গানে সকাল শুরু, Channel I <i>(2015)</i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="music-note note-one" aria-hidden="true">♪</div>
+      <div class="music-note note-two" aria-hidden="true">♯</div>
+      <div class="music-note note-three" aria-hidden="true">𝄞</div>
+    </section>
+
+    <section class="empty-section blank-sound-zone" id="nothing" aria-labelledby="nothing-title">
+      <h2 id="nothing-title">THIS IS THE EMPTY SECTION YOU REQUESTED.</h2>
+      <p>Hover over the vacancy. It has been rehearsing.</p>
+      <span class="tiny-occupant omen" tabindex="0" data-omen="A pixel is just a square with boundaries.">▪</span>
+    </section>
+  </main>
+
+  <footer class="anti-footer">
+    <div class="footer-warning">THE FOOTER IS ABOVE YOU EMOTIONALLY</div>
+    <div>
+      <h2>ZARIF IKRAM</h2>
+      <p>Researching world models. Singing in this one.</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:zarifikram003@gmail.com">email</a>
+      <a href="https://github.com/zarifikram">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=_x0dj7sAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="../">return to threshold</a>
+      <a href="../me/">escape to normality</a>
+      <a href="#top">return to previous confusion</a>
+    </div>
+    <p class="art-credit">PUBLIC-DOMAIN GUESTS: <a href="https://www.artic.edu/artworks/80607/self-portrait">VAN GOGH</a> / <a href="https://commons.wikimedia.org/wiki/File:Francis_Picabia,_1917_-_Machine_tournez_vite.jpg">PICABIA</a> / <a href="https://commons.wikimedia.org/wiki/File:Dada_Head_by_Sophie_Taeuber-Arp,_1920.jpg">TAEUBER-ARP</a> / <a href="https://commons.wikimedia.org/wiki/File:Kurt_Schwitters_-_%22Merz_50%22_Composition_-_Google_Art_Project.jpg">SCHWITTERS</a>. <a href="./assets/ATTRIBUTION.md">FULL CREDITS</a>.</p>
+    <p class="copyright">© <span id="year">2026</span> Zarif Ikram. Layout supervised by nobody.</p>
+  </footer>
+
+  <div class="popup-layer" id="popup-layer" aria-live="polite"></div>
+
+  <template id="popup-template">
+    <section class="fake-window spawned-window" role="dialog" aria-label="Unrequested message">
+      <div class="window-titlebar"><span data-popup-title>IMPORTANT NONSENSE</span><button type="button" data-close-popup aria-label="Close">×</button></div>
+      <div class="window-body"><div class="error-icon" aria-hidden="true">?</div><p data-popup-message></p></div>
+      <div class="window-actions"><button type="button" data-close-popup>Regretfully acknowledge</button></div>
+    </section>
+  </template>
+
+  <noscript>
+    <div class="noscript-note">JavaScript has escaped. The research links remain, but the buttons have stopped lying.</div>
+  </noscript>
+  <script src="./script.js" defer></script>
+</body>
+</html>

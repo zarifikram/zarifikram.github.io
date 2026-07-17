@@ -55,8 +55,9 @@ url: "https://zarifikram.github.io" # the base hostname & protocol for your site
 # !! You don't need to change any of the configuration flags below !!
 #
 
-#permalink: /:title/
-permalink: /
+# Keep generated post pages away from the root gateway. The portfolio itself
+# is rendered at /me/ and the post URLs are implementation-detail archives.
+permalink: /archive/:categories/:title/
 
 
 # The release of Jekyll Now that you're using

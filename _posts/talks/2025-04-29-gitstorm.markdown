@@ -10,7 +10,7 @@ venue: "ICLR World models workshop Oral"
 # code: https://github.com/AugmentedDesignLab/junction-art
 # arxiv: https://arxiv.org/abs/2303.17900
 video: https://iclr.cc/virtual/2025/10000101
-slides: docs/gitstorm.pdf
+slides: /docs/gitstorm.pdf
 ---
 
 <!-- Procedural content generation method to generate infinite complex roundabout HD maps that can be used in autonomous vehicle testing simulators. -->
