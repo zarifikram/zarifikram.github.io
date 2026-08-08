@@ -7,6 +7,7 @@ categories: research
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Golam Md Muktadir, Jim Whitehead"
 venue: "IEEE Intelligent Vehicles Symposium (IV)"
+venue_short: "IEEE IV"
 code: https://github.com/AugmentedDesignLab/junction-art
 arxiv: https://arxiv.org/abs/2303.17900
 ---

@@ -7,6 +7,7 @@ categories: research
 author: "Zarif Ikram"
 authors: "Golam Md Muktadir, Taorui Huang, <strong>Zarif Ikram</strong>, Abdul Jawad, Jim Whitehead"
 venue: "IEEE ITSC"
+venue_short: "IEEE ITSC"
 project_page: https://pedgrid.readthedocs.io/en/latest/
 code: https://github.com/adhocmaster/gym-pedgrid
 ---

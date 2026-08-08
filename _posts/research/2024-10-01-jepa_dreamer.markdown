@@ -3,10 +3,11 @@ layout: post
 title: "Small features matter: Robust representation for world models"
 date: 2025-02-01 23:59:59 +00:00
 image: /images/ball_disappear.pdf
-categories: research
+categories: unpublished
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Miranda Anna Christ, Ling Pan, Dianbo Liu"
 venue: "7th Robot Learning Workshop, ICLR"
+venue_short: "ICLR RoL"
 # code: https://github.com/zarifikram/egfn
 # arxiv: https://arxiv.org/abs/2402.02186
 paper: https://openreview.net/forum?id=4rON0AlI2S

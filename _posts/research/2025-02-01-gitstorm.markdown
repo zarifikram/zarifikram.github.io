@@ -3,10 +3,11 @@ layout: post
 title: "Masked Generative Priors Improve World Models Sequence Modelling Capabilities"
 date: 2025-02-01 23:59:59 +00:00
 image: /images/gitstorm.png
-categories: research
+categories: unpublished
 author: "Zarif Ikram"
 authors: "Cristian Meo*, Mircea Tudor Lică*, <strong>Zarif Ikram*</strong>, Akihiro Nakano, Vedant Shah, Aniket Rajiv Didolkar, Dianbo Liu, Anirudh Goyal, Justin Dauwels"
 venue: "ICLR 2025 Workshop on World Models: Understanding, Modelling and Scaling"
+venue_short: "ICLR WM"
 # code: https://github.com/zarifikram/egfn
 # arxiv: https://arxiv.org/abs/2402.02186
 # project_page: https://openreview.net/forum?id=2gTEW29qsM

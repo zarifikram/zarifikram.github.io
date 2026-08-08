@@ -6,8 +6,9 @@ image: /images/egfn_architecture.png
 categories: research
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Ling Pan, Dianbo Liu"
-accolade: "Best Poster @ EEML2024"
+accolade: "best poster award at EEML!!"
 venue: "Transactions on Machine Learning Research"
+venue_short: "TMLR"
 venue2: "ICLR GEM Bio workshop"
 code: https://github.com/zarifikram/egfn
 arxiv: https://arxiv.org/abs/2402.02186

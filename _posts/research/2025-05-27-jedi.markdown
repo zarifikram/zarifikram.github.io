@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "JEDI: Latent End-to-end Diffusion Mitigates Agent-Human Performance Asymmetry in Model-Based Reinforcement Learning"
-date: 2025-05-26 23:59:59 +00:00
+title: "JEDI: Joint Embedding Diffusion World Model for Model-Based Reinforcement Learning"
+date: 2026-05-26 23:59:59 +00:00
 image: /images/jedi.png
 categories: research
 author: "Zarif Ikram"
-authors: "Jing Yu Lim, <strong>Zarif Ikram</strong>, Samson Yu, Haozhe Ma, Tze-Yun Leong, Dianbo Liu"
+authors: "Jing Yu Lim, Rushi Shah, <strong>Zarif Ikram</strong>, Samson Yu, Haozhe Ma, Tze-Yun Leong, Dianbo Liu"
 venue: "Preprint."
+venue_short: "preprint"
 # code: https://github.com/zarifikram/egfn
 arxiv: https://arxiv.org/abs/2505.19698
 # project_page: https://openreview.net/forum?id=2gTEW29qsM

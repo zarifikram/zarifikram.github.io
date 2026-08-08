@@ -7,12 +7,13 @@ categories: research
 author: "Zarif Ikram"
 authors: "<strong>Zarif Ikram</strong>, Dianbo Liu, M Saifur Rahman"
 venue: "Transactions on Machine Learning Research"
+venue_short: "TMLR"
 # venue2: "ICLR GEM Bio workshop"
 code: https://github.com/zarifikram/gg-dWJS
 # arxiv: https://arxiv.org/abs/2402.02186
 project_page: https://zarifikram.github.io/gg-dWJS/
 paper: https://openreview.net/forum?id=fFVuo4SPfT
-accolade: "RISE 2024 Research Grant Awardee"
+accolade: "RISE'24 grant!"
 ---
 
 Combining denoising score model and discriminator model for discretized Langevin MCMC, this method generates high quality biomolecular sequences that optimize a given objective.
